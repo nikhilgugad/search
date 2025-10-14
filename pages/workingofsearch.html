@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Developer</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../style2.css">
+</head>
+
+<body>
+    <nav class="flex justify-between w-full px-2 md:px-6 items-center py-2 text-sm">
+
+
+
+
+        <div class="flex gap-3 items-center">
+            <a class="hover:underline" href="../index.html">Search</a>
+        </div>
+
+
+        <div class="flex gap-3 items-center">
+            <a class="hover:underline" href="https://www.zoho.com/mail/" target="_blank">Zoho Mail</a>
+            <a class="hover:underline" href="https://www.zoho.com/mail/admin-mobile-app.html" target="_blank">Mail
+                Admin</a>
+
+
+            <div class="relative">
+                <img id="appsBtn" class="rounded-full hover:bg-stone-300 p-2 transition-all duration-300"
+                    src="https://ssl.gstatic.com/gb/images/bar/al-icon.png">
+
+                <div id="appsDropdown"
+                    class="select-none absolute w-[300px] h-[0px] bg-white border border-stone-200 shadow-2xl top-[50px] right-[-50px] opacity-0 transition-all duration-[250ms] overflow-auto">
+                    <h4 class="text-center font-semibold text-[1rem] my-2">General Apps</h4>
+                    <div id="appsGridContainer"
+                        class="overflow-auto w-full max-h-[350px] grid grid-cols-3 justify-center p-3 gap-3 select-none text-center">
+
+
+                        <div class="w-[80px] h-[80px]  hover:bg-stone-200 transition-all duration-200 rounded">
+                            <a href="https://www.zoho.com/writer/" target="_blank"
+                                class="flex flex-col items-center gap-1 justify-center p-2 w-full h-full"><img
+                                    src="icons/zoho_Writer.png" alt="zoho writer" width="30" height="30" class="">
+                                <p class="text-[0.7rem] py-1 text-stone-800 font-semibold">Zoho Writer</p>
+                            </a>
+                        </div>
+                        <div class="w-[80px] h-[80px]  hover:bg-stone-200 transition-all duration-200 rounded">
+                            <a href="https://www.zoho.com/sheet/" target="_blank"
+                                class="flex flex-col items-center gap-1 justify-center p-2 w-full h-full"><img
+                                    src="icons/zoho_Sheets.webp" alt="zoho writer" width="30" height="30" class="">
+                                <p class="text-[0.7rem] py-1 text-stone-800 font-semibold">Zoho Sheets</p>
+                            </a>
+                        </div>
+                        <div class="w-[80px] h-[80px]  hover:bg-stone-200 transition-all duration-200 rounded">
+                            <a href="https://www.zoho.com/show/" target="_blank"
+                                class="flex flex-col items-center gap-1 justify-center p-2 w-full h-full"><img
+                                    src="icons/zoho_Show.png" alt="zoho writer" width="30" height="30" class="">
+                                <p class="text-[0.7rem] py-1 text-stone-800 font-semibold">Zoho Show</p>
+                            </a>
+                        </div>
+                        <div class="w-[80px] h-[80px]  hover:bg-stone-200 transition-all duration-200 rounded">
+                            <a href="https://www.zoho.com/mail/" target="_blank"
+                                class="flex flex-col items-center gap-1 justify-center p-2 w-full h-full"><img
+                                    src="icons/Zoho_Mail-256.png" alt="zoho writer" width="30" height="30" class="">
+                                <p class="text-[0.7rem] py-1 text-stone-800 font-semibold">Zoho Mail</p>
+                            </a>
+                        </div>
+                        <div class="w-[80px] h-[80px]  hover:bg-stone-200 transition-all duration-200 rounded">
+                            <a href="/" target="_blank"
+                                class="flex flex-col items-center gap-1 justify-center p-2 w-full h-full"><img
+                                    src="icons/zoho_workdrive.png" alt="zoho writer" width="30" height="30" class="">
+                                <p class="text-[0.7rem] py-1 text-stone-800 font-semibold">Zoho Workdrive</p>
+                            </a>
+                        </div>
+                        <div class="w-[80px] h-[80px]  hover:bg-stone-200 transition-all duration-200 rounded">
+                            <a href="https://www.zoho.com/notebook/" target="_blank"
+                                class="flex flex-col items-center gap-1 justify-center p-2 w-full h-full"><img
+                                    src="icons/zoho_notebook.png" alt="zoho writer" width="30" height="30" class="">
+                                <p class="text-[0.7rem] py-1 text-stone-800 font-semibold">Notebook</p>
+                            </a>
+                        </div>
+                        <div class="w-[80px] h-[80px]  hover:bg-stone-200 transition-all duration-200 rounded">
+                            <a href="https://web.arattai.in/" target="_blank"
+                                class="flex flex-col items-center gap-1 justify-center p-2 w-full h-full"><img
+                                    src="icons/Arattai_logo.png" alt="zoho writer" width="30" height="30" class="">
+                                <p class="text-[0.7rem] py-1 text-stone-800 font-semibold">Arratai Messenger</p>
+                            </a>
+                        </div>
+                        <div class="w-[80px] h-[80px]  hover:bg-stone-200 transition-all duration-200 rounded">
+                            <a href="https://www.mappls.com/" target="_blank"
+                                class="flex flex-col items-center gap-1 justify-center p-2 w-full h-full"><img
+                                    src="icons/mappls.png" alt="zoho writer" width="30" height="30" class="">
+                                <p class="text-[0.7rem] py-1 text-stone-800 font-semibold">Mappls Maps</p>
+                            </a>
+                        </div>
+                        <div class="w-[80px] h-[80px]  hover:bg-stone-200 transition-all duration-200 rounded">
+                            <a href="https://www.zoho.com/forms/" target="_blank"
+                                class="flex flex-col items-center gap-1 justify-center p-2 w-full h-full"><img
+                                    src="icons/zoho_forms.png" alt="zoho writer" width="30" height="30" class="">
+                                <p class="text-[0.7rem] py-1 text-stone-800 font-semibold">Zoho Forms</p>
+                            </a>
+                        </div>
+                        <div class="w-[80px] h-[80px]  hover:bg-stone-200 transition-all duration-200 rounded">
+                            <a href="https://www.zoho.com/pdfeditor/" target="_blank"
+                                class="flex flex-col items-center gap-1 justify-center p-2 w-full h-full"><img
+                                    src="icons/PDF Editor-logo.png" alt="zoho writer" width="30" height="30" class="">
+                                <p class="text-[0.7rem] py-1 text-stone-800 font-semibold">Zoho PDF Editor</p>
+                            </a>
+                        </div>
+                        <div class="w-[80px] h-[80px]  hover:bg-stone-200 transition-all duration-200 rounded">
+                            <a href="https://www.zoho.com/sites/" target="_blank"
+                                class="flex flex-col items-center gap-1 justify-center p-2 w-full h-full"><img
+                                    src="icons/zoho_sites.png" alt="zoho writer" width="30" height="30" class="">
+                                <p class="text-[0.7rem] py-1 text-stone-800 font-semibold">Zoho Sites</p>
+                            </a>
+                        </div>
+                        <div class="w-[80px] h-[80px]  hover:bg-stone-200 transition-all duration-200 rounded">
+                            <a href="https://www.zoho.com/todo/" target="_blank"
+                                class="flex flex-col items-center gap-1 justify-center p-2 w-full h-full"><img
+                                    src="icons/zoho todo.png" alt="zoho writer" width="30" height="30" class="">
+                                <p class="text-[0.7rem] py-1 text-stone-800 font-semibold">Zoho Todo</p>
+                            </a>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+
+
+            <button
+                class="bg-stone-500 hover:bg-stone-600 transition-all duration-200 cursor-pointer px-4 py-1.5 rounded text-white font-semibold">Sign
+                In</button>
+        </div>
+
+    </nav>
+    <div class="w-full h-0.5 bg-stone-200"></div>
+
+    <main class="mb-[25px]">
+        <p class="w-full text-stone-600 p-5 font-semibold">How Search Works ? </p>
+        <p class="p-5 mb-10">
+            Welcome to the <strong>Search</strong> section of this web application!
+            This page has been designed to provide a simple, fast, and efficient way for users to perform web searches
+            directly from within the application interface.
+            <br><br>
+
+            The search feature here is powered by the <strong>Yandex Search Engine</strong>.
+            Whenever you enter a query in the search box and press the search button, a small piece of JavaScript code
+            takes your input and redirects you to Yandex’s search results page using your exact search terms.
+            <br><br>
+
+            Here’s how it works behind the scenes:
+            <br><br>
+
+            When you type something into the search input field, the JavaScript function reads the value you entered,
+            removes any extra spaces, and then attaches it to the end of Yandex’s search URL.
+            <br><br>
+
+            For example, if your input is:
+            <br>
+            <code>web development tutorials</code>
+            <br><br>
+
+            The script automatically constructs a complete search URL like this:
+            <br>
+            <code>https://yandex.com/search/?text=web+development+tutorials</code>
+            <br><br>
+
+            Then, it uses the JavaScript line:
+            <br>
+            <code>window.location.href = 'https://yandex.com/search/?text=' + encodeURIComponent(query);</code>
+            <br><br>
+
+            This command instructs your browser to immediately open that URL, effectively taking you straight to
+            Yandex’s search results page for your query.
+            <br><br>
+
+            This approach ensures that the search experience feels instant and intuitive, without the need for complex
+            APIs or server-side code.
+            The entire process happens on the client side — meaning it works purely through your browser, keeping the
+            interaction lightweight and responsive.
+            <br><br>
+
+            The main advantages of this method include:
+            <br>
+            • **Simplicity** — The implementation is clean and easy to understand.
+            <br>
+            • **Speed** — The search opens instantly with no extra loading delay.
+            <br>
+            • **Privacy** — Since your query goes directly to Yandex, no data is stored or processed by this
+            application.
+            <br><br>
+
+            This type of front-end search redirection is perfect for educational or personal projects where you want to
+            demonstrate how real-world search engines can be integrated into web interfaces with minimal code.
+            <br><br>
+
+            In the future, this feature could be enhanced to include multiple search engine options — such as Google,
+            Bing, Perplexity, or ChatGPT-based queries — allowing users to choose their preferred platform.
+            Additionally, I plan to implement smart features like search suggestions, auto-complete, and quick previews
+            to make the search experience even more powerful and user-friendly.
+            <br><br>
+
+            For now, the Yandex-based redirect method provides a clean and efficient way to perform searches directly
+            from the site, offering both learning value and practical usability.
+            <br><br>
+
+            Thank you for checking out this section!
+            If you’re interested in seeing the code behind this feature, here’s the core JavaScript snippet that powers
+            it:
+            <br><br>
+
+        <pre><code>
+const searchInput = document.querySelector('#searchInput');
+const searchBtn = document.querySelector('#searchBtn');
+
+searchBtn.addEventListener('click', () => {
+    const query = searchInput.value.trim();
+    if (query) {
+        window.location.href = 'https://yandex.com/search/?text=' + encodeURIComponent(query);
+    }
+});
+</code></pre>
+
+        <br>
+        This simple logic creates a fully functional search experience using only a few lines of code — proving that
+        even small ideas can lead to effective and elegant web solutions.
+        </p>
+    </main>
+    <footer
+        class="flex flex-col items-center text-center md:text-left md:flex-row justify-around bg-stone-200 w-full px-5 py-3">
+        <div class="flex flex-col gap-1 mb-2">
+            <h4 class="font-semibold text-lg">About this page</h4>
+            <a href="./../pages/workingofsearch.html" target="_blank">How search works ?</a>
+            <a href="./../pages/workingofsearch.html" target="_blank">Why this page ?</a>
+        </div>
+        <div class="flex flex-col gap-1">
+            <h4 class="font-semibold text-lg">Indian Products</h4>
+            <a href="https://www.zoho.com/one/?ireft=nhome&src=all-products-phome" target="_blank">Zoho One (operating
+                system)</a>
+            <a href="https://ulaa.com/" target="_blank">Ulaa Browser</a>
+        </div>
+    </footer>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>

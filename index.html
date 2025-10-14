@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary SEO -->
+  <title>CSA Search - NSTI Jodhpur | Nikhil Search</title>
+  <meta name="description" content="CSA Search — lightweight search page created by Nikhil Gugad at NSTI Jodhpur. Fast search, links to Indian products and Zoho apps, plus an AI Search button." />
+  <meta name="keywords" content="CSA Search, NSTI Jodhpur, Nikhil Search, Nikhil Gugad, CSA, Zoho, Indian Search, Ulaa Browser, AI Search" />
+  <meta name="author" content="Nikhil Gugad" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://yourdomain.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="CSA Search - NSTI Jodhpur | Nikhil Search" />
+  <meta property="og:description" content="CSA Search — lightweight search page created by Nikhil Gugad at NSTI Jodhpur." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://yourdomain.com/" />
+  <meta property="og:image" content="https://yourdomain.com/icons/search.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="icons/search.png" type="image/png" />
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://yourdomain.com/#website",
+        "url": "https://yourdomain.com/",
+        "name": "CSA Search",
+        "description": "CSA Search — lightweight search page created by Nikhil Gugad at NSTI Jodhpur.",
+        "publisher": {
+          "@id": "https://yourdomain.com/#organization"
+        },
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://yourdomain.com/?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://yourdomain.com/#organization",
+        "name": "CSA Search",
+        "url": "https://yourdomain.com/",
+        "logo": "https://yourdomain.com/icons/search.png",
+        "sameAs": []
+      }
+    ]
+  }
+  </script>
+
+  <!-- Styles (do not edit) -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style2.css" />
+
+  <!-- OPTIONAL: Analytics placeholder (replace UA-XXXXX-Y or g-XXXXXXXX with your ID) -->
+  <!--
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXX');
+  </script>
+  -->
+</head>
+
+<body class="min-h-screen w-screen flex flex-col">
+
+  <header>
+    <nav class="flex justify-between w-full px-2 md:px-6 items-center py-2 text-sm" aria-label="Main Navigation">
+      <div class="flex gap-3 items-center">
+        <a class="hover:underline" href="./pages/about_dev.html" target="_blank" rel="noopener noreferrer" title="About Developer">About Developer</a>
+      </div>
+
+      <div class="flex gap-3 items-center">
+        <a class="hover:underline hidden md:inline" href="https://www.zoho.com/mail/" target="_blank" rel="noopener noreferrer">Zoho Mail</a>
+        <a class="hover:underline hidden md:inline" href="https://www.zoho.com/mail/admin-mobile-app.html" target="_blank" rel="noopener noreferrer">Mail Admin</a>
+
+        <div class="relative dropdown" aria-haspopup="true">
+          <img id="appsBtn" class="rounded-full hover:bg-stone-300 p-2 transition-all duration-300" src="https://ssl.gstatic.com/gb/images/bar/al-icon.png" alt="Apps menu icon" />
+
+          <div id="appsDropdown" class="select-none absolute w-[300px] md:w-[300px] h-[0px] bg-white border border-stone-200 shadow-2xl top-[50px] right-[-88px] md:right-[-50px] opacity-0 transition-all duration-[250ms] overflow-auto" aria-label="Apps Menu" aria-hidden="true">
+            <h4 class="text-center font-semibold text-[1rem] my-2">General Apps</h4>
+            <div id="appsGridContainer" class="overflow-auto w-full max-h-[350px] flex flex-wrap md:grid grid-cols-3 justify-center p-3 gap-3 select-none text-center">
+
+              <!-- App Tiles -->
+              <div class="w-[80px] h-[80px]  hover:bg-stone-200 transition-all duration-200 rounded">
+                <a href="https://www.zoho.com/writer/" target="_blank" rel="noopener noreferrer" title="Zoho Writer" class="flex flex-col items-center gap-1 justify-center p-2 w-full h-full">
+                  <img src="icons/zoho_Writer.png" alt="Zoho Writer" width="30" height="30">
+                  <p class="text-[0.7rem] py-1 text-stone-800 font-semibold">Zoho Writer</p>
+                </a>
+              </div>
+
+              <div class="w-[80px] h-[80px]  hover:bg-stone-200 transition-all duration-200 rounded">
+                <a href="https://www.zoho.com/sheet/" target="_blank" rel="noopener noreferrer" title="Zoho Sheets" class="flex flex-col items-center gap-1 justify-center p-2 w-full h-full">
+                  <img src="icons/zoho_Sheets.webp" alt="Zoho Sheets" width="30" height="30">
+                  <p class="text-[0.7rem] py-1 text-stone-800 font-semibold">Zoho Sheets</p>
+                </a>
+              </div>
+
+              <div class="w-[80px] h-[80px]  hover:bg-stone-200 transition-all duration-200 rounded">
+                <a href="https://www.zoho.com/show/" target="_blank" rel="noopener noreferrer" title="Zoho Show" class="flex flex-col items-center gap-1 justify-center p-2 w-full h-full">
+                  <img src="icons/zoho_Show.png" alt="Zoho Show" width="30" height="30">
+                  <p class="text-[0.7rem] py-1 text-stone-800 font-semibold">Zoho Show</p>
+                </a>
+              </div>
+
+              <div class="w-[80px] h-[80px]  hover:bg-stone-200 transition-all duration-200 rounded">
+                <a href="https://www.zoho.com/mail/" target="_blank" rel="noopener noreferrer" title="Zoho Mail" class="flex flex-col items-center gap-1 justify-center p-2 w-full h-full">
+                  <img src="icons/Zoho_Mail-256.png" alt="Zoho Mail" width="30" height="30">
+                  <p class="text-[0.7rem] py-1 text-stone-800 font-semibold">Zoho Mail</p>
+                </a>
+              </div>
+
+              <div class="w-[80px] h-[80px]  hover:bg-stone-200 transition-all duration-200 rounded">
+                <a href="/" target="_blank" rel="noopener noreferrer" title="Zoho Workdrive (placeholder)" class="flex flex-col items-center gap-1 justify-center p-2 w-full h-full">
+                  <img src="icons/zoho_workdrive.png" alt="Zoho Workdrive" width="30" height="30">
+                  <p class="text-[0.7rem] py-1 text-stone-800 font-semibold">Zoho Workdrive</p>
+                </a>
+              </div>
+
+              <div class="w-[80px] h-[80px]  hover:bg-stone-200 transition-all duration-200 rounded">
+                <a href="https://www.zoho.com/notebook/" target="_blank" rel="noopener noreferrer" title="Zoho Notebook" class="flex flex-col items-center gap-1 justify-center p-2 w-full h-full">
+                  <img src="icons/zoho_notebook.png" alt="Zoho Notebook" width="30" height="30">
+                  <p class="text-[0.7rem] py-1 text-stone-800 font-semibold">Notebook</p>
+                </a>
+              </div>
+
+              <div class="w-[80px] h-[80px]  hover:bg-stone-200 transition-all duration-200 rounded">
+                <a href="https://web.arattai.in/" target="_blank" rel="noopener noreferrer" title="Arattai Messenger" class="flex flex-col items-center gap-1 justify-center p-2 w-full h-full">
+                  <img src="icons/Arattai_logo.png" alt="Arattai Messenger" width="30" height="30">
+                  <p class="text-[0.7rem] py-1 text-stone-800 font-semibold">Arratai Messenger</p>
+                </a>
+              </div>
+
+              <div class="w-[80px] h-[80px]  hover:bg-stone-200 transition-all duration-200 rounded">
+                <a href="https://www.mappls.com/" target="_blank" rel="noopener noreferrer" title="Mappls Maps" class="flex flex-col items-center gap-1 justify-center p-2 w-full h-full">
+                  <img src="icons/mappls.png" alt="Mappls Maps" width="30" height="30">
+                  <p class="text-[0.7rem] py-1 text-stone-800 font-semibold">Mappls Maps</p>
+                </a>
+              </div>
+
+              <div class="w-[80px] h-[80px]  hover:bg-stone-200 transition-all duration-200 rounded">
+                <a href="https://www.zoho.com/forms/" target="_blank" rel="noopener noreferrer" title="Zoho Forms" class="flex flex-col items-center gap-1 justify-center p-2 w-full h-full">
+                  <img src="icons/zoho_forms.png" alt="Zoho Forms" width="30" height="30">
+                  <p class="text-[0.7rem] py-1 text-stone-800 font-semibold">Zoho Forms</p>
+                </a>
+              </div>
+
+              <div class="w-[80px] h-[80px]  hover:bg-stone-200 transition-all duration-200 rounded">
+                <a href="https://www.zoho.com/pdfeditor/" target="_blank" rel="noopener noreferrer" title="Zoho PDF Editor" class="flex flex-col items-center gap-1 justify-center p-2 w-full h-full">
+                  <img src="icons/PDF Editor-logo.png" alt="Zoho PDF Editor" width="30" height="30">
+                  <p class="text-[0.7rem] py-1 text-stone-800 font-semibold">Zoho PDF Editor</p>
+                </a>
+              </div>
+
+              <div class="w-[80px] h-[80px]  hover:bg-stone-200 transition-all duration-200 rounded">
+                <a href="https://www.zoho.com/sites/" target="_blank" rel="noopener noreferrer" title="Zoho Sites" class="flex flex-col items-center gap-1 justify-center p-2 w-full h-full">
+                  <img src="icons/zoho_sites.png" alt="Zoho Sites" width="30" height="30">
+                  <p class="text-[0.7rem] py-1 text-stone-800 font-semibold">Zoho Sites</p>
+                </a>
+              </div>
+
+              <div class="w-[80px] h-[80px]  hover:bg-stone-200 transition-all duration-200 rounded">
+                <a href="https://www.zoho.com/todo/" target="_blank" rel="noopener noreferrer" title="Zoho Todo" class="flex flex-col items-center gap-1 justify-center p-2 w-full h-full">
+                  <img src="icons/zoho todo.png" alt="Zoho Todo" width="30" height="30">
+                  <p class="text-[0.7rem] py-1 text-stone-800 font-semibold">Zoho Todo</p>
+                </a>
+              </div>
+
+              <!-- Add any additional apps here following the same markup pattern -->
+
+            </div>
+          </div>
+        </div>
+
+        <button class=" bg-stone-500 hover:bg-stone-600 transition-all duration-200 cursor-pointer px-4 py-1.5 rounded text-white font-semibold">Sign In</button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Search Section -->
+  <main class="min-h-[70vh] my-auto py-10 px-4 md:p-10 flex flex-col items-center justify-center" role="main">
+    <h1 id="logo" class="font-pacifico md:text-lg font-semibold text-sky-700 select-none mb-5" itemprop="headline">
+      <span class="text-4xl md:text-6xl font-kbd font-bold tracking-wide text-sky-600">CSA</span>
+      NSTI Jodhpur
+    </h1>
+
+    <h2 class="sr-only">CSA Search — NSTI Jodhpur — Search by Nikhil Gugad</h2>
+
+    <div class="transition-all duration-200 focus-within:shadow-2xl h-[50px] max-w-[650px] w-full mx-auto border border-stone-300 my-5 grid grid-cols-24 rounded-3xl text-sm items-center" role="search" aria-label="CSA Search">
+      <img src="./icons/search.png" alt="Search icon" class="mx-4 col-span-4 md:col-span-2 w-[15px] md:w-[25px]" />
+      <input id="searchInput" type="search" class="placeholder:font-mono font-sans focus:outline-0 border-0 placeholder:text-center col-span-15 md:col-span-17" placeholder="Type here to search" aria-label="Search input" />
+      <div id="aiBtn" class="select-none flex items-center mx-2 md:mx-2.5 col-span-5 justify-center gap-1 py-1 hover:bg-sky-200 rounded-2xl transition duration-300 hover:duration-300 cursor-pointer" title="AI Search (Perplexity)">
+        <img src="icons/perplexity.webp" alt="Perplexity AI" class="w-[15px] h-[15px] md:w-[25px] md:h-[25px]" />
+        <p class="hidden md:block">AI Search</p>
+      </div>
+    </div>
+
+    <div class="w-full flex max-w-[450px] justify-around">
+      <button id="searchBtn" class="bg-stone-200 text-stone-700 px-5 py-1.5 rounded-lg cursor-pointer hover:bg-white hover:text-sky-600 border border-transparent hover:border-sky-600 transition-all duration-300 font-semibold shadow hover:shadow-xl w-[200px]" aria-label="Search">Search</button>
+
+      <button id="luckyBtn" class="hidden md:block bg-stone-200 text-stone-700 px-5 py-1.5 rounded-lg cursor-pointer hover:bg-white hover:text-sky-600 border border-transparent hover:border-sky-600 transition-all duration-300 font-semibold shadow hover:shadow-xl w-[200px]" aria-label="I'm Feeling Lucky">I'm Feeling Lucky</button>
+    </div>
+
+    <div class="h-[200px] w-full"></div>
+  </main>
+
+  <footer class="flex flex-col items-center text-center md:text-left md:flex-row justify-around bg-stone-200 w-full px-5 py-3" role="contentinfo">
+    <div class="flex flex-col gap-1 mb-2">
+      <h4 class="font-semibold text-lg">About this page</h4>
+      <a href="./pages/workingofsearch.html" target="_blank" rel="noopener noreferrer">How search works ?</a>
+      <a href="./pages/workingofsearch.html" target="_blank" rel="noopener noreferrer">Why this page ?</a>
+    </div>
+
+    <div class="flex flex-col gap-1">
+      <h4 class="font-semibold text-lg">Indian Products</h4>
+      <a href="https://www.zoho.com/one/?ireft=nhome&src=all-products-phome" target="_blank" rel="noopener noreferrer">Zoho One (operating system)</a>
+      <a href="https://ulaa.com/" target="_blank" rel="noopener noreferrer">Ulaa Browser</a>
+    </div>
+
+    <div class="flex flex-col gap-1 mt-3 md:mt-0">
+      <h4 class="font-semibold text-lg">Contact</h4>
+      <a href="./pages/about_dev.html" target="_blank" rel="noopener noreferrer">Developer — Nikhil Gugad</a>
+      <span class="text-sm text-stone-600">© <span id="currentYear"></span> CSA Search</span>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    // Small client-side niceties added without affecting layout.
+    // 1) set copyright year
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+  </script>
+
+  <script src="main.js"></script>
+</body>
+
+</html>

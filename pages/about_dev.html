@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Developer</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../style2.css">
+</head>
+
+<body>
+    <nav class="flex justify-between w-full px-2 md:px-6 items-center py-2 text-sm">
+
+
+
+
+        <div class="flex gap-3 items-center">
+            <a class="hover:underline" href="../index.html">Search</a>
+        </div>
+
+
+        <div class="flex gap-3 items-center">
+            <a class="hover:underline" href="https://www.zoho.com/mail/" target="_blank">Zoho Mail</a>
+            <a class="hover:underline" href="https://www.zoho.com/mail/admin-mobile-app.html" target="_blank">Mail
+                Admin</a>
+
+
+            <div class="relative">
+                <img id="appsBtn" class="rounded-full hover:bg-stone-300 p-2 transition-all duration-300"
+                    src="https://ssl.gstatic.com/gb/images/bar/al-icon.png">
+
+                <div id="appsDropdown"
+                    class="select-none absolute w-[300px] h-[0px] bg-white border border-stone-200 shadow-2xl top-[50px] right-[-50px] opacity-0 transition-all duration-[250ms] overflow-auto">
+                    <h4 class="text-center font-semibold text-[1rem] my-2">General Apps</h4>
+                    <div id="appsGridContainer"
+                        class="overflow-auto w-full max-h-[350px] grid grid-cols-3 justify-center p-3 gap-3 select-none text-center">
+
+
+                        <div class="w-[80px] h-[80px]  hover:bg-stone-200 transition-all duration-200 rounded">
+                            <a href="https://www.zoho.com/writer/" target="_blank"
+                                class="flex flex-col items-center gap-1 justify-center p-2 w-full h-full"><img
+                                    src="icons/zoho_Writer.png" alt="zoho writer" width="30" height="30" class="">
+                                <p class="text-[0.7rem] py-1 text-stone-800 font-semibold">Zoho Writer</p>
+                            </a>
+                        </div>
+                        <div class="w-[80px] h-[80px]  hover:bg-stone-200 transition-all duration-200 rounded">
+                            <a href="https://www.zoho.com/sheet/" target="_blank"
+                                class="flex flex-col items-center gap-1 justify-center p-2 w-full h-full"><img
+                                    src="icons/zoho_Sheets.webp" alt="zoho writer" width="30" height="30" class="">
+                                <p class="text-[0.7rem] py-1 text-stone-800 font-semibold">Zoho Sheets</p>
+                            </a>
+                        </div>
+                        <div class="w-[80px] h-[80px]  hover:bg-stone-200 transition-all duration-200 rounded">
+                            <a href="https://www.zoho.com/show/" target="_blank"
+                                class="flex flex-col items-center gap-1 justify-center p-2 w-full h-full"><img
+                                    src="icons/zoho_Show.png" alt="zoho writer" width="30" height="30" class="">
+                                <p class="text-[0.7rem] py-1 text-stone-800 font-semibold">Zoho Show</p>
+                            </a>
+                        </div>
+                        <div class="w-[80px] h-[80px]  hover:bg-stone-200 transition-all duration-200 rounded">
+                            <a href="https://www.zoho.com/mail/" target="_blank"
+                                class="flex flex-col items-center gap-1 justify-center p-2 w-full h-full"><img
+                                    src="icons/Zoho_Mail-256.png" alt="zoho writer" width="30" height="30" class="">
+                                <p class="text-[0.7rem] py-1 text-stone-800 font-semibold">Zoho Mail</p>
+                            </a>
+                        </div>
+                        <div class="w-[80px] h-[80px]  hover:bg-stone-200 transition-all duration-200 rounded">
+                            <a href="/" target="_blank"
+                                class="flex flex-col items-center gap-1 justify-center p-2 w-full h-full"><img
+                                    src="icons/zoho_workdrive.png" alt="zoho writer" width="30" height="30" class="">
+                                <p class="text-[0.7rem] py-1 text-stone-800 font-semibold">Zoho Workdrive</p>
+                            </a>
+                        </div>
+                        <div class="w-[80px] h-[80px]  hover:bg-stone-200 transition-all duration-200 rounded">
+                            <a href="https://www.zoho.com/notebook/" target="_blank"
+                                class="flex flex-col items-center gap-1 justify-center p-2 w-full h-full"><img
+                                    src="icons/zoho_notebook.png" alt="zoho writer" width="30" height="30" class="">
+                                <p class="text-[0.7rem] py-1 text-stone-800 font-semibold">Notebook</p>
+                            </a>
+                        </div>
+                        <div class="w-[80px] h-[80px]  hover:bg-stone-200 transition-all duration-200 rounded">
+                            <a href="https://web.arattai.in/" target="_blank"
+                                class="flex flex-col items-center gap-1 justify-center p-2 w-full h-full"><img
+                                    src="icons/Arattai_logo.png" alt="zoho writer" width="30" height="30" class="">
+                                <p class="text-[0.7rem] py-1 text-stone-800 font-semibold">Arratai Messenger</p>
+                            </a>
+                        </div>
+                        <div class="w-[80px] h-[80px]  hover:bg-stone-200 transition-all duration-200 rounded">
+                            <a href="https://www.mappls.com/" target="_blank"
+                                class="flex flex-col items-center gap-1 justify-center p-2 w-full h-full"><img
+                                    src="icons/mappls.png" alt="zoho writer" width="30" height="30" class="">
+                                <p class="text-[0.7rem] py-1 text-stone-800 font-semibold">Mappls Maps</p>
+                            </a>
+                        </div>
+                        <div class="w-[80px] h-[80px]  hover:bg-stone-200 transition-all duration-200 rounded">
+                            <a href="https://www.zoho.com/forms/" target="_blank"
+                                class="flex flex-col items-center gap-1 justify-center p-2 w-full h-full"><img
+                                    src="icons/zoho_forms.png" alt="zoho writer" width="30" height="30" class="">
+                                <p class="text-[0.7rem] py-1 text-stone-800 font-semibold">Zoho Forms</p>
+                            </a>
+                        </div>
+                        <div class="w-[80px] h-[80px]  hover:bg-stone-200 transition-all duration-200 rounded">
+                            <a href="https://www.zoho.com/pdfeditor/" target="_blank"
+                                class="flex flex-col items-center gap-1 justify-center p-2 w-full h-full"><img
+                                    src="icons/PDF Editor-logo.png" alt="zoho writer" width="30" height="30" class="">
+                                <p class="text-[0.7rem] py-1 text-stone-800 font-semibold">Zoho PDF Editor</p>
+                            </a>
+                        </div>
+                        <div class="w-[80px] h-[80px]  hover:bg-stone-200 transition-all duration-200 rounded">
+                            <a href="https://www.zoho.com/sites/" target="_blank"
+                                class="flex flex-col items-center gap-1 justify-center p-2 w-full h-full"><img
+                                    src="icons/zoho_sites.png" alt="zoho writer" width="30" height="30" class="">
+                                <p class="text-[0.7rem] py-1 text-stone-800 font-semibold">Zoho Sites</p>
+                            </a>
+                        </div>
+                        <div class="w-[80px] h-[80px]  hover:bg-stone-200 transition-all duration-200 rounded">
+                            <a href="https://www.zoho.com/todo/" target="_blank"
+                                class="flex flex-col items-center gap-1 justify-center p-2 w-full h-full"><img
+                                    src="icons/zoho todo.png" alt="zoho writer" width="30" height="30" class="">
+                                <p class="text-[0.7rem] py-1 text-stone-800 font-semibold">Zoho Todo</p>
+                            </a>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+
+
+            <button
+                class="bg-stone-500 hover:bg-stone-600 transition-all duration-200 cursor-pointer px-4 py-1.5 rounded text-white font-semibold">Sign
+                In</button>
+        </div>
+
+    </nav>
+    <div class="w-full h-0.5 bg-stone-200"></div>
+
+    <main class="mb-[25px]">
+        <p class="w-full text-stone-600 p-5 font-semibold">About Developer </p>
+        <p class="p-5">
+            Hello! I’m <a href="https://nikhilgugad.github.io/portfolio/" class="text-blue-700 underline">Nikhil
+                Gugad</a>, a passionate tech enthusiast and aspiring
+            <strong>Full Stack Web Developer</strong> from <strong>Kuchaman City, Rajasthan</strong>.
+            <br><br>
+            I am currently pursuing <strong>CITS (Craft Instructor Training Scheme)</strong> in
+            <strong>CSA (Computer Software Application)</strong> trade from
+            <strong>NSTI (National Skill Training Institute), Jodhpur</strong>.
+            Before this, I completed my <strong>CTS (Craftsman Training Scheme)</strong> in
+            <strong>COPA (Computer Operator and Programming Assistant)</strong> from
+            <strong>Government ITI, Kuchaman City</strong>.
+            These courses have helped me build a solid foundation in computer applications, programming, and technical
+            education.
+            <br><br>
+
+            From a young age, I have been fascinated by technology and computers. What started as curiosity about how
+            things work soon turned into a strong desire to create, build, and innovate.
+            Over the years, this curiosity has shaped me into a motivated learner who enjoys solving problems,
+            experimenting with new technologies, and bringing ideas to life through code.
+            <br><br>
+
+            I have hands-on experience in <strong>front-end web development</strong>, where I specialize in
+            <strong>HTML</strong>, <strong>CSS</strong>, and <strong>Tailwind CSS</strong> to design modern, responsive,
+            and aesthetically pleasing websites.
+            My focus is always on creating user-friendly designs with smooth layouts and clean, maintainable code.
+            I love how front-end development allows me to combine creativity with logic — turning static ideas into
+            interactive, visual experiences that users can enjoy.
+            <br><br>
+
+            In addition to these skills, I have a good command of <strong>JavaScript</strong>, which helps me add
+            interactivity, functionality, and dynamic features to websites and web applications.
+            With JavaScript, I can make designs come alive — from simple animations and event handling to integrating
+            APIs and managing real-time user interactions.
+            <br><br>
+
+            Currently, I’m expanding my knowledge by learning <strong>Node.js</strong>, <strong>Express.js</strong>, and
+            databases such as <strong>MongoDB</strong> and <strong>MySQL</strong>.
+            My goal is to become a proficient <strong>Full Stack Developer</strong> capable of building complete web
+            solutions — from intuitive front-end interfaces to powerful, secure back-end systems.
+            This learning journey excites me because it allows me to understand the full picture of how web applications
+            work, from client requests to server responses.
+            <br><br>
+
+            Apart from web development, I also have good knowledge of <strong>Office Applications</strong> such as Word
+            Processors, Spreadsheets, and Presentation software.
+            I can efficiently create professional documents, data reports, and creative presentations.
+            These skills help me maintain organization, manage information effectively, and present my work clearly.
+            <br><br>
+
+            To blend creativity with my technical expertise, I have hands-on experience in <strong>Adobe
+                Photoshop</strong>.
+            I enjoy designing banners, posters, UI elements, and graphics that align perfectly with my web projects.
+            Being able to design and develop gives me complete control over how my work looks and feels.
+            <br><br>
+
+            Another strong point of mine is typing — I can type over <strong>70 words per minute</strong> with accuracy.
+            This skill may sound simple, but it makes a huge difference in productivity, whether I’m coding,
+            documenting, or managing data.
+            <br><br>
+
+            Beyond academics and work, I always strive to learn new technologies, tools, and frameworks that can improve
+            my workflow.
+            I believe that continuous learning is essential in the tech field, and I’m always eager to explore new
+            concepts, experiment with emerging trends, and take on projects that challenge my creativity and
+            problem-solving skills.
+            <br><br>
+
+            In the future, I aspire to work as a professional web developer, contributing to meaningful projects and
+            helping businesses grow through innovative digital solutions.
+            I also hope to inspire others to pursue learning and technology — just as my mentors and experiences have
+            inspired me.
+            <br><br>
+
+            Thank you for visiting my page and taking the time to learn more about me!
+            Feel free to explore my projects and connect with me through my
+            <a href="https://nikhilgugad.github.io/portfolio/" class="text-blue-700 underline">portfolio</a>.
+            I’m always open to new opportunities, collaborations, and creative discussions.
+
+
+        </p>
+    </main>
+    <footer
+        class="flex flex-col items-center text-center md:text-left md:flex-row justify-around bg-stone-200 w-full px-5 py-3">
+        <div class="flex flex-col gap-1 mb-2">
+            <h4 class="font-semibold text-lg">About this page</h4>
+            <a href="/" target="_blank">How search works ?</a>
+            <a href="/" target="_blank">Why this page ?</a>
+        </div>
+        <div class="flex flex-col gap-1">
+            <h4 class="font-semibold text-lg">Indian Products</h4>
+            <a href="https://www.zoho.com/one/?ireft=nhome&src=all-products-phome" target="_blank">Zoho One (operating
+                system)</a>
+            <a href="https://ulaa.com/" target="_blank">Ulaa Browser</a>
+        </div>
+    </footer>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>

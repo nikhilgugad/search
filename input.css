@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'keyboard';
+  src: url('fonts/keyboard.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'marker';
+  src: url('fonts/marker.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'pacifico';
+  src: url('fonts/pacifico.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'modern';
+  src: url('fonts/playwritemodern.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'cursive';
+  src: url('fonts/playwrite.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Extend Tailwind with your custom font classes */
+@layer base {
+  .font-kbd {
+    font-family: 'keyboard', sans-serif;
+  }
+  .font-marker {
+    font-family: 'marker', sans-serif;
+  }
+  .font-pacifico {
+    font-family: 'pacifico', cursive;
+  }
+  .font-modern {
+    font-family: 'modern', sans-serif;
+  }
+  .font-cursive {
+    font-family: 'cursive', cursive;
+  }
+}
