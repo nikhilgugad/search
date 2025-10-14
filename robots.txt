@@ -1,0 +1,11 @@
+# robots.txt for https://nikhilgugad.github.io/search/
+
+User-agent: *
+Allow: /
+
+Sitemap: https://nikhilgugad.github.io/search/sitemap.xml
+
+# Optional: small SEO tips
+# You can disallow unfinished or private pages like this:
+# Disallow: /test/
+# Disallow: /private/
