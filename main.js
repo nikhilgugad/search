@@ -22,14 +22,14 @@ searchBox.addEventListener('keypress', (e) => {
 aiBtn.addEventListener('click', () => {
     const query = searchBox.value.trim();
     if (query) {
-        window.open('https://www.perplexity.ai/search?q=' + encodeURIComponent(query), '_blank');
+        window.open('https://www.perplexity.ai/search?q=' + encodeURIComponent(query), '_blank').focus();
     }
 });
 
 document.addEventListener('keydown', (e) => {
     const query = searchBox.value.trim();
     if (e.ctrlKey == true && e.key == 'Enter') {
-        window.open('https://www.perplexity.ai/search?q=' + encodeURIComponent(query), '_blank');
+        window.open('https://www.perplexity.ai/search?q=' + encodeURIComponent(query), '_blank').focus();
     }
 });
 
