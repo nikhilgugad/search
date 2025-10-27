@@ -8,14 +8,14 @@ const aiBtn = document.querySelector('#aiBtn');
 searchBtn.addEventListener('click', () => {
     const query = searchBox.value.trim();
     if (query) {
-        window.location.href = 'https://4get.ca/web?s=' + encodeURIComponent(query);
+        window.location.href = 'https://google.com/search?q=' + encodeURIComponent(query);
     }
 });
 
 searchBox.addEventListener('keypress', (e) => {
     const query = searchBox.value.trim();
     if (e.key == "Enter" && e.ctrlKey == false) {
-        window.location.href = 'https://4get.ca/web?s=' + encodeURIComponent(query);
+        window.location.href = 'https://google.com/search?q=' + encodeURIComponent(query);
     }
 });
 
@@ -63,6 +63,7 @@ document.addEventListener('keydown', (e) => {
         appsDropdown.style.height = '400px';
     }
 });
+
 
 
 
